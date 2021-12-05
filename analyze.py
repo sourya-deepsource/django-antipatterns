@@ -53,6 +53,7 @@ def _get_issues():
 
     return issues
 
+
 issues = _get_issues()
 
 # Publish to DeepSource
