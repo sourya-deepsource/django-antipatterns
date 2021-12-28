@@ -1,5 +1,10 @@
 name = "Django smells"
 description = "My custom Django rules, written in semgrep"
-analysis_command = "PATH=/toolbox/venv/bin:$PATH PYTHONPATH=/toolbox/venv:$PYTHONPATH python3 /app/analyze.py"
-visibility = "public"
 category = "language"
+
+[analyzer]
+  command = "python3 /app/analyze.py"
+
+[build]
+  image = "returntocorp/semgrep:0.77.0"
+  steps = "cp -r ../../. /app"
