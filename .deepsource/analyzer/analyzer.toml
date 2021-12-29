@@ -8,6 +8,6 @@ category = "language"
 [build]
   image = "returntocorp/semgrep:0.77.0"
   steps = """
-  cp -r ../../. /app
+  cp -r . /app
   apk add shadow
   """
