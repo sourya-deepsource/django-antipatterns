@@ -1,4 +1,4 @@
-version = 1
+version = "1"
 
 name = "Django smells"
 description = "My custom Django rules, written in semgrep"
